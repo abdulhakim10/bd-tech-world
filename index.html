@@ -25,6 +25,27 @@
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/3b65122051.js" crossorigin="anonymous"></script>
 
+    <style>
+        .carousel-bg {
+            background-color: #ededed;
+            background-position: center;
+            background-size: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        #bg-1 {
+            background-image: url(images/cover/cover-1.png);
+        }
+
+        #bg-2 {
+            background-image: url(images/cover/cover-2.jpg);
+        }
+
+        #bg-3 {
+            background-image: url(images/cover/cover-3.jpg);
+        }
+    </style>
 </head>
 
 <body>
@@ -32,12 +53,12 @@
     <header>
         <!-- navbar -->
         <section class="container mx-auto pb-24">
-            <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+            <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded ">
                 <div class="container flex flex-wrap justify-between items-center mx-auto">
                     <a href="https://flowbite.com/" class="flex items-center">
                         <img src="images/logo/technology-world-logo-concept-design-symbol-vector-23499616.jpg"
-                            class="mr-3 h-6 sm:h-9" alt="Flowbite Logo">
-                        <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Tech
+                            class="mr-3 h-24" alt="Flowbite Logo">
+                        <span class="self-center text-4xl font-bold whitespace-nowrap text-black">Tech
                             World</span>
                     </a>
                     <div class="flex md:order-2">
@@ -59,23 +80,23 @@
                     <div class="hidden justify-between items-center w-full md:flex md:w-auto md:order-1"
                         id="navbar-cta">
                         <ul
-                            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                            class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-xl md:font-medium md:border-0 md:bg-white">
                             <li>
                                 <a href="#"
-                                    class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-gray-400h md:p-0 dark:text-white"
+                                    class="block py-2 pr-4 pl-3 text-gray-700 bg-blue-700 rounded md:bg-transparent md:text-gray-400h md:p-0"
                                     aria-current="page">Home</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                                    class="block py-2 pr-4 pl-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 hover:text-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">About</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                                    class="block py-2 pr-4 pl-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
                             </li>
                             <li>
                                 <a href="#"
-                                    class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-white dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                                    class="block py-2 pr-4 pl-3 text-black rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-700 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -90,24 +111,57 @@
 
             <div id="controls-carousel" class="relative" data-carousel="static">
                 <!-- Carousel wrapper -->
-                <div class="overflow-hidden relative h-56 rounded-lg md:h-96">
+                <div class="overflow-hidden relative h-56 rounded-lg md:h-[550px]">
                     <!-- Item 1 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
                         data-carousel-item="">
-                        <img src="images/cover/cover-1.png"
-                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class="w-full h-full flex justify-center items-center carousel-bg" id="bg-1">
+                            <div class="text-blue-700 text-center pt-32">
+                                <h1 class="text-4xl md:text-6xl font-bold  ">Get Started Digital Learning.</h1>
+                                <p class=" md:text-xl font-medium md:pt-3">We are fast approaching a point where all
+                                    learning content will be digital and online. It’s time to join the revolution, to
+                                    contribute as much as you consume. Your learning journey starts here.</p>
+                                <div class="text-center md:pt-5">
+                                    <button type="button"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-10 py-4 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                                        started</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Item 2 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
                         data-carousel-item="active">
-                        <img src="images/cover/cover-2.jpg"
-                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class="w-full h-full flex justify-center items-center carousel-bg" id="bg-2">
+                            <div class="text-slate-900 text-center pt-32">
+                                <h1 class="text-4xl md:text-6xl font-bold">Get Started Digital Learning.</h1>
+                                <p class="md:text-xl font-medium md:pt-3">We are fast approaching a point where all
+                                    learning content will be digital and online. It’s time to join the revolution, to
+                                    contribute as much as you consume. Your learning journey starts here.</p>
+                                <div class="text-center md:pt-5">
+                                    <button type="button"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-10 py-4 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                                        started</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <!-- Item 3 -->
                     <div class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
                         data-carousel-item="">
-                        <img src="images/cover/cover-3.jpg"
-                            class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2" alt="...">
+                        <div class="w-full h-full flex justify-center items-center carousel-bg" id="bg-3">
+                            <div class="text-blue-900 text-center pt-32">
+                                <h1 class="text-4xl md:text-6xl font-bold ">Get Started Digital Learning.</h1>
+                                <p class="md:text-xl font-medium md:pt-3">We are fast approaching a point where all
+                                    learning content will be digital and online. It’s time to join the revolution, to
+                                    contribute as much as you consume. Your learning journey starts here.</p>
+                                <div class="text-center md:pt-5">
+                                    <button type="button"
+                                        class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-lg px-10 py-4 text-center mr-3 md:mr-0 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get
+                                        started</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- Slider controls -->
@@ -150,7 +204,7 @@
         <section class="pb-24">
             <div class="text-center pb-24">
                 <h2 class="text-5xl font-bold">Discover Our Popular Courses</h2>
-                <p class="pt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, beatae fugit! Quo.</p>
+                <p class="pt-5">Invest your time to develop yourself.</p>
             </div>
 
             <!-- courses -->
@@ -159,7 +213,7 @@
                     <img src="images/course/course-1.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Fundamental Of UI/UX Design</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Fundamental Of UI/UX Design basic to advanced course.</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -167,7 +221,7 @@
                     <img src="images/course/course-2.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Javascript Basic to advanced</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Javascript Basic to advanced course for everyone.</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -175,7 +229,7 @@
                     <img src="images/course/course-3.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Fullstack Web Development</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Fullstack Web Development course for beginners.</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -183,7 +237,7 @@
                     <img src="images/course/course-4.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Digital Marketing</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Digital Marketing course (Advanced).</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -191,7 +245,7 @@
                     <img src="images/course/course-5.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Photography Basic Rules</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Photography Basic Rules for everyone.</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -199,7 +253,7 @@
                     <img src="images/course/course-6.png" alt="">
                     <div class="p-7">
                         <h3 class="text-xl font-semibold">Motion Graphics</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <p>Motion Graphics course (Advanced)</p>
                         <h3 class="text-lg font-bold text-blue-600">Price:20$</h3>
                     </div>
                 </div>
@@ -220,10 +274,9 @@
                     <h2 class="text-4xl font-bold">Explore The elearning
                         <br> Institute
                     </h2>
-                    <p class="pt-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas, molestias
-                        maiores
-                        asperiores tenetur vero, nisi nihil id, quos nesciunt veritatis velit numquam saepe
-                        necessitatibus architecto odit accusamus corporis doloremque atque.</p>
+                    <p class="pt-5">we have 3.2k online courses almost every kind of digital courses are here. Our 600+
+                        expart members sincerely control that courses. Because of our hardwork we have 1k+
+                        positive reviews and Rating.</p>
                     </h2>
                     <div class="grid grid-cols-2 lg:grid-cols-3 m-5">
                         <span>
@@ -255,9 +308,7 @@
                 class=" lg:flex items-center lg:justify-around bg-blue-500  h-80 w-full rounded-lg pt-20 px-16 lg:pt-0 lg:px-0">
                 <div class="text-white text-center lg:text-left">
                     <h1 class="text-5xl font-bold">Ready to join?</h1>
-                    <br>
-                    <p>It is a long established fact that a reader will be distracted by the readable content of a page
-                        when looking at its layout.</p>
+                    <p class="pt-3">To explore the digital world and be a part of new revolution.</p>
                 </div>
                 <div class="mt-5">
 
@@ -289,7 +340,7 @@
                                     <span class="sr-only">Close modal</span>
                                 </button>
                                 <div class="py-6 px-6 lg:px-8">
-                                    <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign in to our
+                                    <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Sign Up to our
                                         platform</h3>
                                     <form class="space-y-6" action="#">
                                         <div>
@@ -373,9 +424,7 @@
         <section class="mx-auto pb-24">
             <div class="text-center pb-10">
                 <h2 class="text-3xl font-bold">Some Students Feedback</h2>
-                <p class="pt-5">It is a long established fact that a reader will be distracted by the readable content
-                    of a page when
-                    looking at its layout.</p>
+
             </div>
 
             <div class="grid lg:grid-cols-2 gap-16">
@@ -392,10 +441,9 @@
                             <i class="fa-solid fa-star"></i>
                         </span>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the
-                        majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem.</p>
+                    <p>It`s a fantastic course for a beginner. I could feel the effort that was put into to make sure
+                        people understood. Thank you Coursera, when I become one the greatest, I will remember this
+                        beginning.</p>
 
                     <div class="flex items-center mt-7">
                         <img src="images/student/student-5.png" alt="">
@@ -417,13 +465,13 @@
                             <i class="fa-solid fa-star"></i>
                         </span>
                     </div>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have
-                        suffered alteration in some form, by injected humour, or randomised words which don't look
-                        even slightly believable. If you are going to use a passage of Lorem.</p>
+                    <p>It was very helpful and I understood things so easily. A beginner in this field will surely be
+                        benefited. Also the extra material is very helpful. This helped me take up full stack web
+                        development..</p>
                     <div class="flex items-center mt-7">
-                        <img src="images/student/student-5.png" alt="">
+                        <img src="images/student/student-6.png" alt="">
                         <span class="px-4">
-                            <h3 class="text-lg font-semibold">Nur Islam</h3>
+                            <h3 class="text-lg font-semibold">Sanjida Anam</h3>
                             <p>Web Developer</p>
                         </span>
                     </div>
@@ -434,9 +482,7 @@
         <section class="mx-auto pb-24">
             <div class="text-center">
                 <h2 class="text-4xl font-bold">Frequently Asked Questions</h2>
-                <p class="py-5">It is a long established fact that a reader will be distracted by the readable content
-                    of a page when
-                    looking at its layout.</p>
+                <p class="py-5">you should check out these frequently asked questions.</p>
             </div>
             <!-- accordion -->
             <div>
@@ -571,7 +617,7 @@
 
 </body>
 <!-- footer -->
-<footer class="h-96 bg-black">
+<footer class="h-96 bg-slate-900">
     <div class="text-center pt-36">
         <h1 class="text-4xl font-bold text-white">Tech World</h1>
         <p class="text-gray-400 pt-3">Office 41, Zawaya Buildin, Ghala Muscat,
